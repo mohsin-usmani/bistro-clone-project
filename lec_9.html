@@ -25,7 +25,7 @@
         }
 
         .top-header {
-            position: absolute;
+            position: fixed;
             display: flex;
             z-index: 1;
             background-color: #0C6;
@@ -119,10 +119,15 @@
 
         }
 
-        li::before {
+        .health li::before {
             content: "✦";
             padding-right: 1rem;
 
+        }
+
+        footer li {
+            list-style: none;
+            color: #666;
         }
 
         .health {
@@ -156,6 +161,38 @@
             font-weight: 400;
             line-height: 34px;
             margin: 25px;
+        }
+
+        footer {
+            font-size: 18px;
+            position: relative;
+            padding: 50px 50px;
+            justify-content: space-between;
+            font-family: Lexend-Regular;
+            margin-bottom: 25px;
+            margin-left: 180px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            line-height: 30px;
+
+
+        }
+
+        .about{
+            position: absolute;
+        }
+        .learn{
+            position: absolute;
+            left: 270px;
+        }
+        .follow{
+            position: absolute;
+            left:500px;
+        }
+        .down{
+            position: absolute;
+            left:750px;
         }
     </style>
 </head>
@@ -225,8 +262,35 @@
         <img src="./desk---Speed_v2_1.webp" height="370">
 
     </section>
+    <br>
+    <hr>
+    
     <footer>
+        <div class="about">
+            <h4>About Bistro</h4>
+            <br>
+            <ul>
+                <li>about</li>
+                <li>block</li>
+                <li>career</li>
+                <li>press</li>
+            </ul>
+        </div>
 
+
+        <div class="learn">
+            <h4>Learn More</h4>
+            <br>
+            <ul>
+                <li>about</li>
+                <li>block</li>
+                <li>career</li>
+                <li>press</li>
+            </ul>
+        </div>
+
+        <h4 class="follow">Follow us</h4>
+        <h4 class="down">download app</h4>
     </footer>
 
 </body>
