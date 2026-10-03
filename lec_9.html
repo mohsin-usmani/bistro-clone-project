@@ -5,138 +5,229 @@
     <meta charset="UTF-8">
     <title>Tistro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    margin: 0;
-}
-.top-header{
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    background-color:#0C6;
-    width: 100%;
-}
-.top-header a{
-    display: inline-block;
-     margin-left: auto;
-    background: black;
-    color: white;
+        .health {
+            position: relative;
 
-    padding: 12px 20px;
-    border-radius: 12px;
+        }
 
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-   
+        body {
+            margin: 0;
+        }
 
-    text-decoration: none;
-}
+        .top-header {
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            background-color: #0C6;
+            width: 100%;
+        }
+
+        .top-header a {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: 60px;
+            align-self: center;
+            background: black;
+            color: white;
+
+            padding: 12px 20px;
+            border-radius: 10px;
+
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+
+
+            text-decoration: none;
+        }
 
 
 
 
+        .blinkit {
+            margin-left: 60px;
+        }
 
-header {
-    width: 100%;
-    height: 590px;
+        header {
+            width: 100%;
+            height: 590px;
 
-    background-image: url("./bistro_header.png");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    position: relative;
-}
+            background-image: url("./bistro_header.png");
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            position: relative;
+        }
 
-.hero-content {
-    position: absolute;
+        .hero-content {
+            position: absolute;
 
-    top: 100px;
-    left: 14%;
+            top: 100px;
+            left: 14%;
 
-    width: 300px;
-}
+            width: 300px;
+        }
 
-.hero-content h1 {
-    font-family: 'poppins',Lexend-Bold;
-    color: white;
-    font-size: 62px;
-    line-height: 1;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
+        .hero-content h1 {
+            font-family: 'poppins', Lexend-Bold;
+            color: white;
+            font-size: 62px;
+            line-height: 1;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
 
-.hero-content p {
-    color: white;
-    font-family: sans-serif;
-    font-size: 19px;
-    line-height: 1.45;
-    margin-bottom: 20px;
-}
+        .hero-content p {
+            color: white;
+            font-family: sans-serif;
+            font-size: 19px;
+            line-height: 1.45;
+            margin-bottom: 20px;
+        }
 
-.hero-content a {
-    display: inline-block;
-    background: white;
-    color: #159447;
+        .hero-content a {
+            display: inline-block;
+            background: white;
+            color: #159447;
 
-    padding: 16px 24px;
-    border-radius: 12px;
+            padding: 16px 24px;
+            border-radius: 12px;
 
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 16px;
 
-    text-decoration: none;
-}
+            text-decoration: none;
+        }
 
-#belowheader{
-    position:relative;
-    top:650px;
-    left:220px;
-    
-    
+        #belowheader {
+            padding: 50px 220px;
+            ;
 
-}
 
+
+        }
+
+        li::before {
+            content: "✦";
+            padding-right: 1rem;
+
+        }
+
+        .health {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 220px;
+        }
+
+        .health img {
+            height: 350;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .health h1 {
+            font-family: Lexend-Medium;
+            font-size: 44px;
+            font-weight: 700;
+            font-style: normal;
+
+            line-height: 56px;
+        }
+
+        .health li {
+            font-family: Lexend-Regular;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            margin: 25px;
+        }
     </style>
 </head>
 
 <body>
     <nav class="top-header">
         <div>
-        <img src="./download.webp" class="blinkit" width="105">
+            <img src="./download.webp" class="blinkit" width="105">
         </div>
         <a href="#">Get the App</a>
 
     </nav>
-   <header>
-    <div class="hero-content">
-        <h1>Delivered<br>at your<br>doorstep</h1>
+    <header>
+        <div class="hero-content">
+            <h1>Delivered<br>at your<br>doorstep</h1>
 
-        <p>
-            Enjoy delicious snacks, meals, and<br>
-            drinks delivered, prepared in a<br>
-            hygienic environment nearby.
-        </p>
+            <p>
+                Enjoy delicious snacks, meals, and<br>
+                drinks delivered, prepared in a<br>
+                hygienic environment nearby.
+            </p>
 
-        <a href="#">Get the App</a>
-    </div>
+            <a href="#">Get the App</a>
+        </div>
+
+    </header>
+
     <section id="belowheader">
 
         <img src="./desk---Menu-Images.webp" height="435">
 
     </section>
-</header>
+
+    <section class="health">
+        <div class="health-text">
+            <h1>Health & Hygiene</h1>
+            <ul>
+                <li>High-quality ingredients for great taste and nutrition.</li>
+                <li>Balanced, delicious meals for all kinds of dietary needs.</li>
+                <li>Prepared in hygienic kitchens.</li>
+            </ul>
+        </div>
+        <img src="./Health-_-Hygiene.webp" height="370">
+
+    </section>
+    <section class="health">
+        <div class="health-text">
+            <h1>Sustainability</h1>
+            <ul>
+                <li>Eco-friendly, recyclable packaging.</li>
+                <li>Responsibly sourced, transparent ingredients.</li>
+                <li>Reduced carbon footprint with green practices.</li>
+            </ul>
+        </div>
+        <img src="./desk---bistro_pack-(1).webp" height="370">
+
+    </section>
+    <section class="health">
+        <div class="health-text">
+            <h1>Speed</h1>
+            <ul>
+                <li>Food and beverages delivered at your doorstep</li>
+                <li>Live order tracking for real-time updates.</li>
+                <li>Quick prep, seamless delivery every time.</li>
+            </ul>
+        </div>
+        <img src="./desk---Speed_v2_1.webp" height="370">
+
+    </section>
+    <footer>
+
+    </footer>
 
 </body>
 
